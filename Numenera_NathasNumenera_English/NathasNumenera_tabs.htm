@@ -1,7 +1,7 @@
 <!-- ******* HEADER **************** -->
 <div  class="sheet-3colrow" width="100%">
     <div class="sheet-col">
-        <span class="sheet-heavy">NAME</span>
+	    <span data-i18n="name-u"><span class="sheet-heavy">NAME</span></span>
         <input type="text" name="attr_character_name" style="width: 200px;" />
     </div>
     <div class="sheet-col" align="center"><span style="font-size:0.8em;color:lightgrey;text-align:center;">Version 4.8 (2015-10-10)</span></div>
@@ -10,13 +10,13 @@
     </div>
 </div>
 <input type="radio" name="attr_PcOrNpc" class="sheet-tab sheet-tab1" value="1" title="PC1" checked="checked" />
-<span class="sheet-tab sheet-tab1">Main</span>
+<span data-i18n="main-u"><span class="sheet-tab sheet-tab1">Main</span></span>
 <input type="radio" name="attr_PcOrNpc" class="sheet-tab sheet-tab2" value="2" title="PC2" />
-<span class="sheet-tab sheet-tab2">Numen&eacute;ra &amp; Equipment</span>
+<span data-i18n="NumeneraEquipment-u"><span class="sheet-tab sheet-tab2">Numen&eacute;ra &amp; Equipment</span></span>
 <input type="radio" name="attr_PcOrNpc" class="sheet-tab sheet-tab3" value="3" title="PC3" />
-<span class="sheet-tab sheet-tab3">Advancement &amp; Background</span>
+<span data-i18n="AdvancementBackground-u"><span class="sheet-tab sheet-tab3">Advancement &amp; Background</span></span>
 <input type="radio" name="attr_PcOrNpc" class="sheet-tab sheet-tab4" value="4" title="PNJ" />
-<span class="sheet-tab sheet-tab4">NPC / Creature</span>
+<span data-i18n="NPCCreature-u"><span class="sheet-tab sheet-tab4">NPC / Creature</span></span>
 <hr class="sheet-two" width="100%"/>
 <!-- ******* PC **************** -->
 <!-- ******* PC TAB 1 -->
@@ -61,20 +61,20 @@
             </div> <!-- END Attacks -->
             <div width="100%"> <!-- BEGIN skills -->
                 <hr class="sheet-two" width="100%"/>
-                <span class="sheet-heavy">SKILLS</span>
+                <span data-i18n="skills-u"><span class="sheet-heavy">SKILLS</span></span>
                 <fieldset class="repeating_skills">
                     <table align="center" width="100%">
                         <tr>
                             <td><input type="text" name="attr_skill-name" style="width: 100%;" title="Name" placeholder="New skill" /></td>
-                            <td><input type="checkbox" name="attr_trained-skill" title="Trained" /></td>
-                            <td><input type="checkbox" name="attr_specialized-skill" title="Specialized" /></td>
+                            <span data-i18n="trained-u"><td><input type="checkbox" name="attr_trained-skill" title="Trained" /></td></span>
+                            <span data-i18n="specialized-u"><td><input type="checkbox" name="attr_specialized-skill" title="Specialized" /></td></span>
                         </tr>
                     </table>
                 </fieldset>
             </div> <!-- END skills -->
             <div width="100%"> <!-- BEGIN inabilities  -->
                 <hr class="sheet-two" width="100%"/>
-                <span class="sheet-heavy">INABILITIES</span>
+		    <span data-i18n="inabilities-u"><span class="sheet-heavy">INABILITIES</span></span>
                 <fieldset class="repeating_inabilities">
                     <textarea name="attr_inability" style="height: 46px; width: 100%;"></textarea>
                 </fieldset>
@@ -85,21 +85,21 @@
             <div> <!-- BEGIN stats and Tier -->
                 <table width="100%" align="center">
                     <tr>
-                        <td class="sheet-td-right"><span class="sheet-heavy">TIER</span></td>
+                        <span data-i18n="tier-u"><td class="sheet-td-right"><span class="sheet-heavy">TIER</span></td></span>
                         <td><input type="number" name="attr_tier" value="1" /></td>
                         <td style="width: 50px;">&nbsp;</td>
-                        <td class="sheet-td-right"><span class="sheet-heavy">STATS</span></td>
-                        <td class="sheet-tdsmall-center">Pool</td>
-                        <td class="sheet-tdsmall-center">Max</td>
-                        <td class="sheet-tdsmall-center">Edge</td>
+                        <span data-i18n="stats-u"><td class="sheet-td-right"><span class="sheet-heavy">STATS</span></td></span>
+                        <span data-i18n="pool-u"><td class="sheet-tdsmall-center">Pool</td></span>
+                        <span data-i18n="max-u"><td class="sheet-tdsmall-center">Max</td></span>
+				<span data-i18n="edge-u"><td class="sheet-tdsmall-center">Edge</td></span>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="sheet-td-right">Effort</td>
+                       <span data-i18n="effort-u"> <td class="sheet-td-right">Effort</td></span>
                         <td><input type="number" name="attr_effort" value="1" /></td>
                         <td style="width: 50px;">&nbsp;</td>
-                        <td class="sheet-td-right">Might</td>
+                       <span data-i18n="might-u"> <td class="sheet-td-right">Might</td></span>
                         <td><input type="number" name="attr_might" title="Current value" value="11" /></td>
                         <td><input type="number" name="attr_might_max" title="Maximum value" value="11" /></td>
                         <td><input type="number" name="attr_mightedge" value="1" /></td>
@@ -109,10 +109,10 @@
                          name="roll_basicMightCheck"></button></td>
                     </tr>
                     <tr>
-                        <td style="text-align: right;">XP</td>
+                        <span data-i18n="xp-u"><td style="text-align: right;">XP</td></span>
                         <td><input type="number" name="attr_xp" value="0" /></td>
                         <td style="width: 50px;">&nbsp;</td>
-                        <td class="sheet-td-right">Speed</td>
+                        <span data-i18n="speed-u"><td class="sheet-td-right">Speed</td></span>
                         <td><input type="number" name="attr_speed" title="Current value" value="10" /></td>
                         <td><input type="number" name="attr_speed_max"  title="Maximum value" value="10" /></td>
                         <td><input type="number" name="attr_speededge" value="1" /></td>
@@ -122,10 +122,10 @@
                         name="roll_basicSpeedCheck"></button></td>
                     </tr>
                     <tr>
-                        <td class="sheet-tdsmall-right">Armor</td>
+                        <span data-i18n="Armor-u"><td class="sheet-tdsmall-right">Armor</td></span>
                         <td><input type="number" name="attr_armor"  value="0" title="Armor. See the Equipment tab to modify it." /></td>
                         <td style="width: 50px;">&nbsp;</td>
-                        <td style="text-align: right;">Intellect</td>
+                        <span data-i18n="intellect-u"><td style="text-align: right;">Intellect</td></span>
                         <td><input type="number" name="attr_intellect" title="Current value" value="7" /></td>
                         <td><input type="number" name="attr_intellect_max" title="Maximum value" value="7" /></td>
                         <td><input type="number" name="attr_intellectedge" value="0" /></td>
@@ -150,19 +150,19 @@
                 <table WIDTH="100%"> <!-- BEGIN stat roll -->
                     <tr>
                         <td class="sheet-tdsmall-left">
-                            <span class="sheet-heavy">ACTION</span>
+				<span data-i18n="action-u"><span class="sheet-heavy">ACTION</span></span>
                         </td>
                         <td class="sheet-tdsmall-left">
-                            Difficulty&nbsp;<input style="width:40px;height:18px;padding:0px;" type="number" min="0" max="10" name="attr_rollVarDiff" title="Task difficulty" value="0"/>
+				<span data-i18n="Difficulty&nbsp-u">Difficulty&nbsp;</span><input style="width:40px;height:18px;padding:0px;" type="number" min="0" max="10" name="attr_rollVarDiff" title="Task difficulty" value="0"/>
                         </td>
                         <td class="sheet-tdsmall-right">
-                            Cost&nbsp;
+				<span data-i18n="Cost&nbsp;-u"> Cost&nbsp;</span>
                         </td>
                         <td class="sheet-tdsmall-left">
                             <input style="width:40px;height:18px;padding:0px;" type="number" min="0" max="12" name="attr_rollVarCost" title="Extra Stat Pool cost from a Power or Ability" value="0" />
                         </td>
                         <td class="sheet-tdsmall-right">
-                            Bonus&nbsp;
+                            <span data-i18n="Bonus&nbsp;-u">Bonus&nbsp;</span>
                         </td>
                         <td class="sheet-tdsmall-left">
                             <input style="width:40px;height:18px;padding:0px;" type="number" min="-2" max="2" name="attr_rollVarBonus" title="Bonus to the ROLL (0, 1 or 2 maximum)" value="0" />
@@ -173,7 +173,7 @@
                     </tr>
                     <tr>
                         <td class="sheet-tdsmall-right">
-                            Skill&nbsp;
+                            <span data-i18n="Skill&nbsp;-u">Skill&nbsp;</span>
                         </td>
                         <td class="sheet-tdsmall-left">
                             <div class="sheet-inputlike">
